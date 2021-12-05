@@ -31,6 +31,8 @@ library(leaflet)
 df %>%
   leaflet() %>%
   addTiles() %>%
-  addMarkers(clusterOptions = markerClusterOptions())
+  addMarkers(clusterOptions = markerClusterOptions()
+  addMarkers(lat=40.6892, lng=-74.0445, popup="Statue of Liberty") %>%
+  addMarkers(lat=28.6129, lng=77.2295, popup="India Gate, Delhi"))
 
 ```
